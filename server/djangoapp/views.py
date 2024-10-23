@@ -7,7 +7,6 @@ from django.shortcuts import get_object_or_404, render, redirect
 from django.contrib.auth import logout
 from django.contrib import messages
 from datetime import datetime
-
 from django.http import JsonResponse
 from django.contrib.auth import login, authenticate
 import logging
@@ -43,10 +42,8 @@ def logout_request(request):
     logout(request)
     data = {"userName":""}
     return JsonResponse(data)
-<<<<<<< HEAD
-=======
 
->>>>>>> 504ff39 (register)
+
 # ...
 
 # Create a `registration` view to handle sign up request
