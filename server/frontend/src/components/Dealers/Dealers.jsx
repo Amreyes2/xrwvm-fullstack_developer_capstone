@@ -30,6 +30,7 @@ const Dealers = () => {
     const res = await fetch(dealer_url, {
       method: "GET"
     });
+   
     const retobj = await res.json();
     if(retobj.status === 200) {
       let all_dealers = Array.from(retobj.dealers)
